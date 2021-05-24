@@ -49,7 +49,7 @@ defmodule Alice.Mixfile do
       {:credo, "~> 1.2", only: [:dev, :test], runtime: false, optional: true},
 
       # Test dependencies
-      {:excoveralls, "~> 0.12.3", only: :test},
+      {:excoveralls, "~> 0.14.1", only: :test},
 
       # Docs dependencies
       {:ex_doc, "~> 0.21", only: :dev}
