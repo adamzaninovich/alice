@@ -42,7 +42,7 @@ defmodule Alice.Mixfile do
       {:slack, "~> 0.23.2"},
       {:poison, "~> 4.0"},
       {:poolboy, "~> 1.5.0"},
-      {:redix, "~> 0.6.0"},
+      {:redix, "~> 1.1.3"},
 
       # Optional dependencies
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false, optional: true},
