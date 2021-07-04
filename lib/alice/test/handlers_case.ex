@@ -218,7 +218,7 @@ defmodule Alice.HandlerCase do
       import Alice.HandlerCase
 
       setup do
-        Alice.Router.start_link(unquote(handlers))
+        start_supervised({Alice.Router, unquote(handlers)})
 
         :ok
       end

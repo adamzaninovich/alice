@@ -4,7 +4,7 @@ defmodule Mix.Tasks.Alice.ConsoleTest do
   import ExUnit.CaptureIO
 
   setup_all do
-    Alice.Router.start_link([Alice.Handlers.Utils, Alice.Handlers.Help])
+    start_supervised({Alice.Router, [Alice.Handlers.Utils, Alice.Handlers.Help]})
 
     on_exit(fn ->
       Application.put_env(:alice, :outbound_client, Alice.ChatBackends.OutboundSpy)
